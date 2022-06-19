@@ -11,7 +11,7 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     mapping(bytes32 => string) public requestIdToTokenURI;
     mapping(uint256 => Breed) public tokenIdToBreed;
     mapping(bytes32 => uint256) public requestIdToTokenId;
-    event RequestedCollectible(bytes32 indexed requestId); 
+    event RequestedCollectible(bytes32 indexed requestId);
     // New event from the video!
     event ReturnedCollectible(bytes32 indexed requestId, uint256 randomNumber);
 

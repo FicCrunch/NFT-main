@@ -8,7 +8,7 @@ load_dotenv()
 PINATA_BASE_URL = "https://api.pinata.cloud/"
 endpoint = "pinning/pinFileToIPFS"
 # Change this to upload a different file
-filepath = "./img/pug.png"
+filepath = "./img/1.png"
 filename = filepath.split("/")[-1:][0]
 headers = {
     "pinata_api_key": os.getenv("PINATA_API_KEY"),
